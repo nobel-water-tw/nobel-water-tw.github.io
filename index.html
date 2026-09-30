@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>諾貝爾國際企業 - 智慧型 RO 純水機與專業淨水系統</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nobel: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#035388',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .water-wave {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #0c4a6e 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(224, 242, 254, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center text-white shadow-md shadow-sky-200">
+                        <i data-lucide="droplet" class="w-7 h-7 fill-white"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xl font-bold tracking-tight text-slate-900">諾貝爾淨水</span>
+                            <span class="text-xs bg-sky-100 text-sky-800 font-semibold px-2 py-0.5 rounded-full">NOBEL</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">智慧型 RO 純水機專門品牌</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-sky-600 transition-colors py-1">關於諾貝爾</a>
+                    <a href="#models" class="hover:text-sky-600 transition-colors py-1">熱門機種</a>
+                    <a href="#stages" class="hover:text-sky-600 transition-colors py-1">五道過濾原理</a>
+                    <a href="#energy" class="hover:text-sky-600 transition-colors py-1">超次元能量水</a>
+                    <a href="#estimator" class="hover:text-sky-600 transition-colors py-1">濾心試算器</a>
+                    <a href="#certs" class="hover:text-sky-600 transition-colors py-1">品質認證</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#contact" class="inline-flex items-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white font-medium px-4 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all">
+                        <i data-lucide="phone-call" class="w-4 h-4"></i>
+                        <span>線上諮詢 / 預約</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-700 font-medium hover:text-sky-600">關於諾貝爾</a>
+            <a href="#models" class="block py-2 text-slate-700 font-medium hover:text-sky-600">熱門機種</a>
+            <a href="#stages" class="block py-2 text-slate-700 font-medium hover:text-sky-600">五道過濾原理</a>
+            <a href="#energy" class="block py-2 text-slate-700 font-medium hover:text-sky-600">超次元能量水</a>
+            <a href="#estimator" class="block py-2 text-slate-700 font-medium hover:text-sky-600">濾心試算器</a>
+            <a href="#certs" class="block py-2 text-slate-700 font-medium hover:text-sky-600">品質認證</a>
+            <a href="#contact" class="block py-2 text-center bg-sky-600 text-white rounded-lg font-medium">線上諮詢 / 預約</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative water-wave text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-sky-400/20 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-white/15 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium text-sky-100">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-cyan-300"></i>
+                        <span>美國 WQA 及 NSF 評鑑最優，品質最值得信賴</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        滴滴純水．超質完美<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-sky-100">為全家健康嚴格把關</span>
+                    </h1>
+                    <p class="text-sky-100 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        諾貝爾國際企業獨創「微電腦偵測衛生看得見」，搭載高科技逆滲透技術，極小孔徑澈底濾除重金屬、農藥、細菌與病毒，還原純淨甘甜的好水！
+                    </p>
+                    
+                    <!-- Trust Badges -->
+                    <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center space-x-3">
+                            <i data-lucide="award" class="w-6 h-6 text-amber-300 flex-shrink-0"></i>
+                            <div>
+                                <div class="text-xs text-sky-200">產品責任險</div>
+                                <div class="text-sm font-bold text-white">最高 5,000 萬元</div>
+                            </div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center space-x-3">
+                            <i data-lucide="cpu" class="w-6 h-6 text-cyan-300 flex-shrink-0"></i>
+                            <div>
+                                <div class="text-xs text-sky-200">獨創技術</div>
+                                <div class="text-sm font-bold text-white">微電腦自動偵測</div>
+                            </div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center space-x-3 col-span-2 sm:col-span-1">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-emerald-300 flex-shrink-0"></i>
+                            <div>
+                                <div class="text-xs text-sky-200">售後服務</div>
+                                <div class="text-sm font-bold text-white">全國 36 個經銷網</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <a href="#models" class="bg-white text-sky-900 hover:bg-sky-50 font-semibold px-6 py-3.5 rounded-xl shadow-lg transition-all inline-flex items-center space-x-2">
+                            <span>瀏覽熱門機種</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#stages" class="bg-sky-700/60 hover:bg-sky-700/80 text-white font-semibold px-6 py-3.5 rounded-xl border border-white/20 transition-all">
+                            了解過濾技術
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Banner Feature Card -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 text-slate-800 shadow-2xl relative overflow-hidden">
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-200/50 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-100 px-3 py-1 rounded-full">旗艦首選</span>
+                            <span class="text-xs text-slate-500 font-medium">型號: HP-3001</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">諾貝爾三溫逆滲透純水飲水機</h3>
+                        <p class="text-sm text-slate-600 mb-6">集心血與智慧的結晶，安全、便捷、現代化的冰冷熱三溫純水淨水系統。</p>
+                        
+                        <div class="space-y-3 border-t border-slate-100 pt-4 text-sm">
+                            <div class="flex justify-between items-center">
+                                <span class="text-slate-500">水質標準</span>
+                                <span class="font-semibold text-sky-700">美國 NSF / WQA 雙重肯定</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-slate-500">水溫配置</span>
+                                <span class="font-semibold text-slate-800">冰水 / 冷水 / 熱水</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-slate-500">適用場所</span>
+                                <span class="font-semibold text-slate-800">家庭、辦公室、學校、工廠</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-emerald-600 font-semibold flex items-center gap-1">
+                                <i data-lucide="check-circle-2" class="w-4 h-4"></i> 美國原裝進口膜心
+                            </span>
+                            <a href="#contact" class="text-sm font-bold text-sky-600 hover:text-sky-800 flex items-center gap-1">
+                                專人洽詢 <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product Models -->
+    <section id="models" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-sky-600 font-bold text-sm tracking-wider uppercase">MODELS & SYSTEMS</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-2 sm:text-4xl">熱門飲水機與淨水設備目錄</h2>
+                <p class="text-slate-600 mt-3 text-base">符合多樣場合與安裝空間的需求，提供立地型、桌上型、廚下型及智慧型純水設備。</p>
+            </div>
+
+            <!-- Category Switcher Tabs -->
+            <div class="flex justify-center mb-10 overflow-x-auto pb-2">
+                <div class="inline-flex p-1.5 bg-slate-200/80 rounded-2xl gap-1">
+                    <button onclick="filterModels('all')" class="model-tab-btn active bg-white text-sky-700 font-semibold px-5 py-2.5 rounded-xl shadow-sm transition-all text-sm">全部產品</button>
+                    <button onclick="filterModels('floor')" class="model-tab-btn text-slate-600 hover:text-slate-900 font-medium px-5 py-2.5 rounded-xl transition-all text-sm">立地型飲水機</button>
+                    <button onclick="filterModels('counter')" class="model-tab-btn text-slate-600 hover:text-slate-900 font-medium px-5 py-2.5 rounded-xl transition-all text-sm">桌上/廚下型</button>
+                    <button onclick="filterModels('ro')" class="model-tab-btn text-slate-600 hover:text-slate-900 font-medium px-5 py-2.5 rounded-xl transition-all text-sm">RO淨水主機</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="product-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Model 1: Hp3 -->
+                <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="floor">
+                    <div>
+                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
+                            <div class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">立地三溫型</div>
+                            <div class="w-24 h-40 bg-gradient-to-b from-slate-200 to-slate-300 rounded-xl border-2 border-slate-400 shadow-inner flex flex-col items-center justify-between p-2">
+                                <div class="w-full bg-slate-800 h-6 rounded flex items-center justify-center text-[10px] text-cyan-400">微電腦顯示</div>
+                                <div class="flex space-x-1 my-2">
+                                    <div class="w-2 h-4 bg-red-500 rounded-full"></div>
+                                    <div class="w-2 h-4 bg-sky-400 rounded-full"></div>
+                                    <div class="w-2 h-4 bg-blue-600 rounded-full"></div>
+                                </div>
+                                <div class="w-12 h-10 bg-slate-100 rounded border border-slate-300"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">Hp3 冰冷熱三溫逆滲透純水機</h3>
+                        <p class="text-xs text-slate-500 mb-4">全自動大容量，適合家庭與高用量辦公環境</p>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-xs text-slate-600 mb-6">
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">電壓 / 電力</span>
+                                <span class="font-semibold text-slate-800">110V (熱1200W / 冰140W)</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">水桶容量</span>
+                                <span class="font-semibold text-slate-800">熱15L / 冰4L / 冷12L</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">機身規格</span>
+                                <span class="font-semibold text-slate-800">390 × 380 × 1280 (mm)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium text-slate-500">造水 / 製冰</span>
+                                <span class="font-semibold text-sky-600">50 加侖 / 日</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('Hp3 冰冷熱三溫逆滲透純水機')" class="w-full bg-slate-100 group-hover:bg-sky-600 group-hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>預約諮詢</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Model 2: Hp2 -->
+                <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="counter">
+                    <div>
+                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
+                            <div class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">桌上/中型</div>
+                            <div class="w-28 h-32 bg-slate-200 rounded-xl border-2 border-slate-400 shadow-inner flex flex-col items-center justify-between p-2">
+                                <div class="w-full bg-slate-700 h-5 rounded text-[9px] text-white text-center leading-5">Hp2 純水機</div>
+                                <div class="flex space-x-2 my-1">
+                                    <div class="w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+                                    <div class="w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                                </div>
+                                <div class="w-16 h-8 bg-slate-100 rounded border border-slate-300"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">Hp2 冷熱純水機</h3>
+                        <p class="text-xs text-slate-500 mb-4">輕巧實用尺寸，滿足冷熱雙溫需求</p>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-xs text-slate-600 mb-6">
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">電壓 / 電力</span>
+                                <span class="font-semibold text-slate-800">110V / 820W</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">水桶容量</span>
+                                <span class="font-semibold text-slate-800">熱水 10L / 冷水 16L</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">尺寸規格</span>
+                                <span class="font-semibold text-slate-800">42 × 45 × 70 (cm)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium text-slate-500">特點</span>
+                                <span class="font-semibold text-sky-600">高效加熱，節能設計</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('Hp2 冷熱純水機')" class="w-full bg-slate-100 group-hover:bg-sky-600 group-hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>預約諮詢</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Model 3: KT660RO -->
+                <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="counter">
+                    <div>
+                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
+                            <div class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">精緻桌上型</div>
+                            <div class="w-32 h-28 bg-gradient-to-tr from-slate-100 to-slate-200 rounded-2xl border-2 border-slate-300 shadow-md p-2 flex flex-col justify-between">
+                                <div class="flex justify-between items-center px-1">
+                                    <span class="text-[9px] font-bold text-sky-700">KT660</span>
+                                    <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                                </div>
+                                <div class="flex justify-center space-x-1 my-1">
+                                    <div class="w-2 h-3 bg-red-400 rounded-xs"></div>
+                                    <div class="w-2 h-3 bg-sky-300 rounded-xs"></div>
+                                    <div class="w-2 h-3 bg-blue-500 rounded-xs"></div>
+                                </div>
+                                <div class="w-full bg-white h-6 rounded border border-slate-200"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">KT660RO 專用冰冷熱飲水機</h3>
+                        <p class="text-xs text-slate-500 mb-4">時尚桌上型設計，小巧兼具三溫功能</p>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-xs text-slate-600 mb-6">
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">電壓 / 電力</span>
+                                <span class="font-semibold text-slate-800">110V / 940W</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">容量</span>
+                                <span class="font-semibold text-slate-800">熱6L / 冷3.8L / 冰1.5L</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium text-slate-500">規格 (mm)</span>
+                                <span class="font-semibold text-slate-800">550 × 375 × 346</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('KT660RO 專用冰冷熱飲水機')" class="w-full bg-slate-100 group-hover:bg-sky-600 group-hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>預約諮詢</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Model 4: A6 廚下型 -->
+                <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="counter">
+                    <div>
+                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
+                            <div class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">廚下隱藏式</div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-20 h-28 bg-slate-300 rounded-lg border border-slate-400 p-2 flex flex-col justify-between">
+                                    <div class="text-[8px] text-slate-600">A6 廚下主機</div>
+                                    <div class="w-full h-8 bg-slate-400/30 rounded"></div>
+                                </div>
+                                <div class="w-8 h-16 border-t-2 border-r-2 border-slate-600 rounded-tr-xl flex flex-col justify-end">
+                                    <div class="text-[8px] font-bold text-sky-600">陶瓷龍頭</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">廚下型冷熱純水機 (A6)</h3>
+                        <p class="text-xs text-slate-500 mb-4">隱藏式安裝不占檯面，附精密陶瓷水心龍頭</p>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-xs text-slate-600 mb-6">
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">電壓 / 電力</span>
+                                <span class="font-semibold text-slate-800">110V / 800W</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">尺寸 (cm)</span>
+                                <span class="font-semibold text-slate-800">長44 × 寬18.5 × 高46</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium text-slate-500">專利權</span>
+                                <span class="font-semibold text-indigo-600">專利產品 仿冒必究</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('廚下型冷熱純水機 (A6)')" class="w-full bg-slate-100 group-hover:bg-sky-600 group-hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>預約諮詢</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Model 5: RO純水主機 -->
+                <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="ro">
+                    <div>
+                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
+                            <div class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">智慧純水設備</div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-24 h-24 border-2 border-emerald-500 rounded-xl bg-white p-2 flex space-x-1 items-end justify-center">
+                                    <div class="w-4 h-16 bg-sky-200 rounded-t"></div>
+                                    <div class="w-4 h-16 bg-sky-200 rounded-t"></div>
+                                    <div class="w-4 h-16 bg-sky-200 rounded-t"></div>
+                                </div>
+                                <div class="w-12 h-20 bg-cyan-600 rounded-full border border-cyan-700"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">諾貝爾智慧型 RO 純水機</h3>
+                        <p class="text-xs text-slate-500 mb-4">搭載微電腦水質偵測顯示器，水質好壞一目瞭然</p>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-xs text-slate-600 mb-6">
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">馬達</span>
+                                <span class="font-semibold text-slate-800">超靜音 PUMP (耗電僅10W)</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">壓力桶</span>
+                                <span class="font-semibold text-slate-800">AMTRO塑鋼筒 (外覆EPOXY)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium text-slate-500">認證標章</span>
+                                <span class="font-semibold text-emerald-600">美國 WQA / NSF 評鑑</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('諾貝爾智慧型 RO 純水機')" class="w-full bg-slate-100 group-hover:bg-sky-600 group-hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>預約諮詢</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Model 6: M-201系列 -->
+                <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="ro">
+                    <div>
+                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
+                            <div class="absolute top-3 left-3 bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded-full">專業淨水組</div>
+                            <div class="w-28 h-28 bg-white rounded-xl shadow border border-slate-300 p-2 flex flex-col justify-between items-center">
+                                <div class="text-[9px] font-mono text-slate-500">M-201(A1) ADVANCED</div>
+                                <div class="flex space-x-1">
+                                    <div class="w-3 h-12 bg-sky-100 rounded border border-sky-300"></div>
+                                    <div class="w-3 h-12 bg-sky-100 rounded border border-sky-300"></div>
+                                    <div class="w-3 h-12 bg-sky-100 rounded border border-sky-300"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">NOBEL M-201 RO系統</h3>
+                        <p class="text-xs text-slate-500 mb-4">自動沖洗RO膜、無水高水壓自動斷電防護</p>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-xs text-slate-600 mb-6">
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">特色功能</span>
+                                <span class="font-semibold text-slate-800">兩段式壓差控制</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
+                                <span class="font-medium text-slate-500">水質檢測</span>
+                                <span class="font-semibold text-slate-800">含水質具測顯示</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium text-slate-500">安裝設計</span>
+                                <span class="font-semibold text-slate-800">精巧省空間型態</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('NOBEL M-201 RO系統')" class="w-full bg-slate-100 group-hover:bg-sky-600 group-hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>預約諮詢</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5-Stage Filtration Details Section -->
+    <section id="stages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sky-600 font-bold text-sm tracking-wider uppercase">FILTRATION TECHNOLOGY</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-2 sm:text-4xl">諾貝爾 5 道智慧過濾防線</h2>
+                <p class="text-slate-600 mt-3 text-base">層層過濾，滴滴純淨。透視極小孔徑 Reverse Osmosis 技術與優質濾心材質。</p>
+            </div>
+
+            <!-- Interactive Stage Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Stage 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-sky-500 transition-all shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-sky-200">1</span>
+                        <span class="text-xs bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">壽命: 3~6 個月</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">第一道：前置纖維濾心</h3>
+                    <p class="text-xs font-semibold text-sky-600 mb-3">PP, CUNO廠 5 MICRON</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        第一時間攔截泥沙與雜質，有效去除微生物、鐵鏽、砂石、泥土、膠狀物等較大顆粒物質。
+                    </p>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-sky-500 transition-all shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-sky-200">2</span>
+                        <span class="text-xs bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">壽命: 5~6 個月</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">第二道：顆粒活性碳</h3>
+                    <p class="text-xs font-semibold text-sky-600 mb-3">DYNA OMNIPURE T33/T28</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        強效吸附化學異味，吸附餘氯、細菌、氨基酸、蛋白質脂肪、驅蟲劑及除草劑等有機毒物。
+                    </p>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-sky-500 transition-all shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-sky-200">3</span>
+                        <span class="text-xs bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">壽命: 6~10 個月</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">第三道：壓縮活性碳</h3>
+                    <p class="text-xs font-semibold text-sky-600 mb-3">M-10 CTO 壓縮活性碳</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        加強保護前段過濾成果，防範前道活性碳粉外漏，進一步精細加強水質過濾與護膜。
+                    </p>
+                </div>
+
+                <!-- Core Pump & Motor -->
+                <div class="bg-gradient-to-br from-slate-900 to-sky-950 text-white rounded-2xl p-6 shadow-xl border border-sky-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="p-2 bg-sky-500/20 rounded-xl border border-sky-400/30">
+                            <i data-lucide="zap" class="w-6 h-6 text-cyan-300"></i>
+                        </div>
+                        <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-medium border border-emerald-500/30">超低故障率</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">動力核心：超靜音加壓馬達</h3>
+                    <p class="text-xs font-semibold text-cyan-300 mb-3">PUMP 128p/cm² | DC24V (僅10W)</p>
+                    <p class="text-sm text-sky-100/80 leading-relaxed">
+                        1. 補水壓之不足、提升造水量及晶質。<br>
+                        2. 具造滿水自動停電保護，極致節能省電。
+                    </p>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="bg-sky-50/80 rounded-2xl p-6 border border-sky-200 hover:border-sky-500 transition-all shadow-sm lg:col-span-2">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-sky-200">4</span>
+                            <span class="text-xs font-bold bg-sky-600 text-white px-3 py-1 rounded-full">核心技術 RO 逆滲透膜</span>
+                        </div>
+                        <span class="text-xs bg-sky-200 text-sky-900 px-3 py-1 rounded-full font-medium">壽命: 2~5 年</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">第四道：美國原裝進口 RO 逆滲透膜</h3>
+                    <p class="text-xs font-semibold text-sky-700 mb-3">APPLER / DESAL / HYDRANAUTICS / FILMTEC (50加侖/日)</p>
+                    <p class="text-sm text-slate-700 leading-relaxed mb-3">
+                        孔徑小至 0.0001 微米，徹底淨化濾效果平均達 <strong>92~98%</strong>！有效去除重金屬、消毒劑、農藥、漂白劑、氯酸鉀、放射線、色素、染料及各類濾性病毒。
+                    </p>
+                </div>
+
+                <!-- Tank -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-sky-500 transition-all shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <i data-lucide="container" class="w-8 h-8 text-sky-600"></i>
+                        <span class="text-xs bg-slate-200 text-slate-700 px-3 py-1 rounded-full font-medium">低故障率</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">儲水配備：壓力儲水桶</h3>
+                    <p class="text-xs font-semibold text-sky-600 mb-3">AMTRO廠 塑鋼筒</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        外覆 EPOXY 烤漆，內 PE 囊與空氣隔絕，絕不生鏽且大幅減少細菌繁殖。
+                    </p>
+                </div>
+
+                <!-- Stage 5 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-sky-500 transition-all shadow-sm lg:col-span-2">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-sky-200">5</span>
+                        <span class="text-xs bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">壽命: 1~1.5 年</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">第五道：後置活性碳濾心</h3>
+                    <p class="text-xs font-semibold text-sky-600 mb-3">OMNIPURE 廠進口濾心</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        可吸附儲存筒內可能產生之微量異味，保持水質口感甘美可口，讓您每一口都品嚐到最純淨優質的水口感。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Energy Water System Section -->
+    <section id="energy" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-cyan-400 font-bold text-sm tracking-wider uppercase">ENERGY WATER SYSTEM</span>
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl leading-tight">
+                        超次元能量水<br>
+                        <span class="text-sky-300">能量水 9766 系列</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        特別結合珍貴天然礦石及專利配方，改變水質使水能量化，釋放微量元素與產生小分子水，促進血液循環與新陳代謝，讓飲水健康再升級！
+                    </p>
+                    
+                    <div class="bg-slate-800/80 rounded-2xl p-4 border border-slate-700 flex items-center space-x-4">
+                        <div class="p-3 bg-sky-500/20 text-sky-300 rounded-xl">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm text-white">優良水質 品牌認證</div>
+                            <div class="text-xs text-slate-400">通過 NSF 認證標準，提供極致甘甜健康水質</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5-Process Energy Pipeline Cards -->
+                <div class="lg:col-span-7 space-y-3">
+                    
+                    <div class="bg-slate-800/50 hover:bg-slate-800 rounded-xl p-4 border border-slate-700 transition-all flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-sky-500 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">1</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">第一道：纖維濾心</h4>
+                            <p class="text-xs text-slate-300 mt-0.5">初步去除雜質、鐵鏽、淤泥、毛發及懸浮物等顆粒物。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 hover:bg-slate-800 rounded-xl p-4 border border-slate-700 transition-all flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-sky-500 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">2</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">第二道：樹脂 KDF 濾心</h4>
+                            <p class="text-xs text-slate-300 mt-0.5">採用德國樹脂濾材與美國進口 KDF 濾材，軟化水質減少水垢，去除藻類與重金屬 (如鉛、砷、汞、鉻)。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 hover:bg-slate-800 rounded-xl p-4 border border-slate-700 transition-all flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-500 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">3</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">第三道：能量石濾心</h4>
+                            <p class="text-xs text-slate-300 mt-0.5">以珍貴天然礦石專利配方改變水質能量，產生小分子水，釋放人體所需微量元素。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 hover:bg-slate-800 rounded-xl p-4 border border-slate-700 transition-all flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-sky-500 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">4</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">第四道：中空絲膜濾心</h4>
+                            <p class="text-xs text-slate-300 mt-0.5">醫療人工腎臟透析使用原料，孔徑0.01~0.1微米，快速高效濾除細菌與大腸桿菌。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 hover:bg-slate-800 rounded-xl p-4 border border-slate-700 transition-all flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-lg bg-sky-500 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">5</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">第五道：抑菌除鉛活性碳濾心</h4>
+                            <p class="text-xs text-slate-300 mt-0.5">有效去除餘氯、三鹵甲烷、臭味及農藥化學物質，確保最高等級生飲水品質。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Lifetime Calculator Tool -->
+    <section id="estimator" class="py-20 bg-sky-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl p-8 border border-sky-100">
+                <div class="text-center mb-8">
+                    <span class="text-xs font-bold text-sky-600 bg-sky-100 px-3 py-1 rounded-full uppercase">ONLINE TOOL</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">家庭濾心更換週期試算器</h2>
+                    <p class="text-sm text-slate-500 mt-1">選擇您的家庭人數與每日用水量，了解最佳濾心維護時間表</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">1. 使用家庭人數</label>
+                            <select id="calc-people" onchange="calculateFilters()" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:ring-2 focus:ring-sky-500 outline-none">
+                                <option value="1">1 - 2 人 (小家庭/單身)</option>
+                                <option value="2" selected>3 - 4 人 (一般家庭)</option>
+                                <option value="3">5 人以上 (大型家庭/公司)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">2. 每日估計用水型態</label>
+                            <select id="calc-usage" onchange="calculateFilters()" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:ring-2 focus:ring-sky-500 outline-none">
+                                <option value="1">僅純粹飲用</option>
+                                <option value="1.2" selected>飲用 + 煮飯煲湯</option>
+                                <option value="1.5">飲用 + 煮飯 + 蔬果清洗</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-sky-50 p-4 rounded-xl text-xs text-sky-800 flex items-start space-x-2">
+                            <i data-lucide="info" class="w-4 h-4 flex-shrink-0 text-sky-600 mt-0.5"></i>
+                            <span>提示：諾貝爾智慧型 RO 純水機配有微電腦提示，當濾心失效時會自動切斷水流提醒您更換。</span>
+                        </div>
+                    </div>
+
+                    <!-- Output Schedule Card -->
+                    <div class="bg-slate-900 text-white rounded-2xl p-6 space-y-4">
+                        <h4 class="font-bold text-sky-300 text-base border-b border-slate-700 pb-3 flex items-center justify-between">
+                            <span>建議濾心維護週期</span>
+                            <i data-lucide="calendar" class="w-5 h-5 text-sky-400"></i>
+                        </h4>
+
+                        <div class="space-y-3 text-xs">
+                            <div class="flex justify-between items-center bg-slate-800 p-2.5 rounded-lg">
+                                <span class="text-slate-300">第 1 道 PP纖維濾心</span>
+                                <span id="res-stg1" class="font-bold text-sky-300">約 3 - 4 個月</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-slate-800 p-2.5 rounded-lg">
+                                <span class="text-slate-300">第 2-3 道 活性碳濾心</span>
+                                <span id="res-stg2" class="font-bold text-sky-300">約 5 - 6 個月</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-slate-800 p-2.5 rounded-lg">
+                                <span class="text-slate-300">第 4 道 RO逆滲透膜</span>
+                                <span id="res-stg4" class="font-bold text-amber-300">約 2 - 3 年</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-slate-800 p-2.5 rounded-lg">
+                                <span class="text-slate-300">第 5 道 後置活性碳</span>
+                                <span id="res-stg5" class="font-bold text-sky-300">約 12 個月</span>
+                            </div>
+                        </div>
+
+                        <button onclick="openModal('濾心維護報修與更換')" class="w-full mt-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2.5 rounded-xl text-xs transition-all text-center block">
+                            預約原廠到府更換服務
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Company Strengths -->
+    <section id="certs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sky-600 font-bold text-sm tracking-wider uppercase">QUALITY & TRUST</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-2 sm:text-4xl">品質保證，值得信賴</h2>
+                <p class="text-slate-600 mt-3 text-base">諾貝爾深耕國際淨水技術，以嚴格認證保障您每一口飲水安全。</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">WQA & NSF 評鑑</h3>
+                    <p class="text-xs text-slate-500">榮獲美國國家最高衛生單位等級檢驗通過</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
+                        <i data-lucide="file-check-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">FDA 規範符合</h3>
+                    <p class="text-xs text-slate-500">符合衛生食品規定標準，生飲無虞</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
+                        <i data-lucide="badge-dollar-sign" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">千萬產品責任險</h3>
+                    <p class="text-xs text-slate-500">投保富邦產品責任險高額保障，安心享用</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
+                        <i data-lucide="wrench" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">全省售後服務網</h3>
+                    <p class="text-xs text-slate-500">全省 36 個經銷網、數百間加盟店專業維護</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-cyan-400 font-bold text-sm tracking-wider uppercase">CONTACT US</span>
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">聯絡諾貝爾淨水</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        有任何純水機安裝需求、舊機維修換芯，或是經銷加盟意願，歡迎隨時與我們聯繫！
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400">
+                                <i data-lucide="building-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">公司名稱</div>
+                                <div class="font-semibold text-white">諾貝爾國際企業有限公司</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400">
+                                <i data-lucide="shield" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">保單號碼</div>
+                                <div class="font-semibold text-white">0500字第85M1.000284</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-sky-400">
+                                <i data-lucide="headphones" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">服務據點</div>
+                                <div class="font-semibold text-white">全省 36 個經銷據點與專業工程團隊</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="lg:col-span-7 bg-slate-800 rounded-3xl p-6 sm:p-8 border border-slate-700">
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">您的姓名 *</label>
+                                <input type="text" required placeholder="例如：張先生 / 陳小姐" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-sky-500 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">聯絡電話 *</label>
+                                <input type="tel" required placeholder="0912-345-678" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-sky-500 outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">諮詢項目</label>
+                                <select id="form-topic" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-sky-500 outline-none">
+                                    <option>新機諮詢 / 安裝評估</option>
+                                    <option>濾心保養與更換</option>
+                                    <option>產品水質檢測</option>
+                                    <option>加盟 / 經銷合作</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">居住地區</label>
+                                <input type="text" placeholder="例如：台北市大安區" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-sky-500 outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">需求細節描述</label>
+                            <textarea rows="3" placeholder="請填寫您感興趣的型號或希望諮詢的事項..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-sky-500 outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg flex items-center justify-center space-x-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>送出諮詢申請</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 text-center sm:flex sm:justify-between sm:items-center space-y-3 sm:space-y-0">
+            <div>
+                © 2026 諾貝爾國際企業 NOBEL INTERNATIONAL CORP. 版權所有
+            </div>
+            <div class="flex justify-center space-x-4 text-slate-400">
+                <span>美國 WQA/NSF 評鑑優良</span>
+                <span>•</span>
+                <span>智慧型 RO 純水機專利</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Universal Product Inquiry Modal -->
+    <div id="modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="text-center space-y-2 mb-6">
+                <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center mx-auto">
+                    <i data-lucide="droplets" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900" id="modal-title">專人快速預約</h3>
+                <p class="text-xs text-slate-500">請留下資料，我們的工程團隊將盡速與您聯繫</p>
+            </div>
+            
+            <form onsubmit="handleModalSubmit(event)" class="space-y-3">
+                <input type="hidden" id="modal-product-input">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">姓名</label>
+                    <input type="text" required placeholder="您的稱呼" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">電話</label>
+                    <input type="tel" required placeholder="09xx-xxx-xxx" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500 outline-none">
+                </div>
+                <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-2.5 rounded-xl text-sm transition-all mt-2">
+                    確認送出
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-xl flex items-center space-x-3 hidden text-sm border border-slate-700">
+        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400"></i>
+        <span id="toast-msg">已成功送出！</span>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Product Category Filtering
+        function filterModels(category) {
+            const cards = document.querySelectorAll('.product-card');
+            const btns = document.querySelectorAll('.model-tab-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-white', 'text-sky-700', 'shadow-sm', 'font-semibold');
+                btn.classList.add('text-slate-600');
+            });
+
+            event.target.classList.add('bg-white', 'text-sky-700', 'shadow-sm', 'font-semibold');
+            event.target.classList.remove('text-slate-600');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Filter Lifespan Calculator Logic
+        function calculateFilters() {
+            const people = parseFloat(document.getElementById('calc-people').value);
+            const usage = parseFloat(document.getElementById('calc-usage').value);
+            const factor = people * usage;
+
+            const stg1 = Math.max(2, Math.round(5 / factor));
+            const stg2 = Math.max(3, Math.round(7 / factor));
+            const stg4 = (3 / Math.sqrt(factor)).toFixed(1);
+            const stg5 = Math.max(8, Math.round(15 / factor));
+
+            document.getElementById('res-stg1').innerText = `約 ${stg1} - ${stg1 + 1} 個月`;
+            document.getElementById('res-stg2').innerText = `約 ${stg2} - ${stg2 + 2} 個月`;
+            document.getElementById('res-stg4').innerText = `約 ${stg4} 年`;
+            document.getElementById('res-stg5').innerText = `約 ${stg5} 個月`;
+        }
+
+        // Modal Logic
+        function openModal(productName) {
+            document.getElementById('modal-title').innerText = `諮詢：${productName}`;
+            document.getElementById('modal-product-input').value = productName;
+            document.getElementById('modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').innerText = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            showToast('需求已成功送出！我們的服務人員將儘快與您聯繫。');
+            e.target.reset();
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            closeModal();
+            showToast('預約成功！我們將有專人與您確認服務時間。');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
