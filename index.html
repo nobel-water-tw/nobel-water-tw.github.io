@@ -43,7 +43,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased font-sans">
 
-    <!-- Navigation -->
+    <!-- Navigation Header -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <!-- Desktop Nav -->
+                <!-- Desktop Nav Links -->
                 <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
                     <a href="#about" class="hover:text-sky-600 transition-colors py-1">關於諾貝爾</a>
                     <a href="#models" class="hover:text-sky-600 transition-colors py-1">熱門機種</a>
@@ -71,7 +71,7 @@
                     <a href="#certs" class="hover:text-sky-600 transition-colors py-1">品質認證</a>
                 </nav>
 
-                <!-- Action Button -->
+                <!-- Action CTA -->
                 <div class="hidden sm:flex items-center space-x-3">
                     <a href="#contact" class="inline-flex items-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white font-medium px-4 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all">
                         <i data-lucide="phone-call" class="w-4 h-4"></i>
@@ -79,14 +79,14 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile Hamburger Button -->
                 <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Drawer -->
+        <!-- Mobile Drawer Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
             <a href="#about" class="block py-2 text-slate-700 font-medium hover:text-sky-600">關於諾貝爾</a>
             <a href="#models" class="block py-2 text-slate-700 font-medium hover:text-sky-600">熱門機種</a>
@@ -116,7 +116,7 @@
                         諾貝爾國際企業獨創「微電腦偵測衛生看得見」，搭載高科技逆滲透技術，極小孔徑澈底濾除重金屬、農藥、細菌與病毒，還原純淨甘甜的好水！
                     </p>
                     
-                    <!-- Trust Badges -->
+                    <!-- Trust Stats -->
                     <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
                         <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center space-x-3">
                             <i data-lucide="award" class="w-6 h-6 text-amber-300 flex-shrink-0"></i>
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <!-- Banner Feature Card -->
+                <!-- Hero Product Card -->
                 <div class="lg:col-span-5">
                     <div class="glass-card rounded-3xl p-6 sm:p-8 text-slate-800 shadow-2xl relative overflow-hidden">
                         <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-200/50 rounded-full blur-2xl pointer-events-none"></div>
@@ -192,7 +192,7 @@
         </div>
     </section>
 
-    <!-- Featured Product Models -->
+    <!-- Featured Product Showcase -->
     <section id="models" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
@@ -201,7 +201,7 @@
                 <p class="text-slate-600 mt-3 text-base">符合多樣場合與安裝空間的需求，提供立地型、桌上型、廚下型及智慧型純水設備。</p>
             </div>
 
-            <!-- Category Switcher Tabs -->
+            <!-- Category Filter Tabs -->
             <div class="flex justify-center mb-10 overflow-x-auto pb-2">
                 <div class="inline-flex p-1.5 bg-slate-200/80 rounded-2xl gap-1">
                     <button onclick="filterModels('all')" class="model-tab-btn active bg-white text-sky-700 font-semibold px-5 py-2.5 rounded-xl shadow-sm transition-all text-sm">全部產品</button>
@@ -214,20 +214,13 @@
             <!-- Products Grid -->
             <div id="product-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Model 1: Hp3 -->
+                <!-- Product 1: Hp3 -->
                 <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="floor">
                     <div>
-                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
-                            <div class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">立地三溫型</div>
-                            <div class="w-24 h-40 bg-gradient-to-b from-slate-200 to-slate-300 rounded-xl border-2 border-slate-400 shadow-inner flex flex-col items-center justify-between p-2">
-                                <div class="w-full bg-slate-800 h-6 rounded flex items-center justify-center text-[10px] text-cyan-400">微電腦顯示</div>
-                                <div class="flex space-x-1 my-2">
-                                    <div class="w-2 h-4 bg-red-500 rounded-full"></div>
-                                    <div class="w-2 h-4 bg-sky-400 rounded-full"></div>
-                                    <div class="w-2 h-4 bg-blue-600 rounded-full"></div>
-                                </div>
-                                <div class="w-12 h-10 bg-slate-100 rounded border border-slate-300"></div>
-                            </div>
+                        <div class="relative bg-slate-100 rounded-2xl mb-6 overflow-hidden h-56 flex items-center justify-center">
+                            <span class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">立地三溫型</span>
+                            <!-- Product Image Block -->
+                            <img src="hp3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Hp3+Pure+Water+System'" alt="Hp3 冰冷熱三溫逆滲透純水機" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Hp3 冰冷熱三溫逆滲透純水機</h3>
                         <p class="text-xs text-slate-500 mb-4">全自動大容量，適合家庭與高用量辦公環境</p>
@@ -257,19 +250,13 @@
                     </button>
                 </div>
 
-                <!-- Model 2: Hp2 -->
+                <!-- Product 2: Hp2 -->
                 <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="counter">
                     <div>
-                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
-                            <div class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">桌上/中型</div>
-                            <div class="w-28 h-32 bg-slate-200 rounded-xl border-2 border-slate-400 shadow-inner flex flex-col items-center justify-between p-2">
-                                <div class="w-full bg-slate-700 h-5 rounded text-[9px] text-white text-center leading-5">Hp2 純水機</div>
-                                <div class="flex space-x-2 my-1">
-                                    <div class="w-2.5 h-2.5 bg-red-500 rounded-full"></div>
-                                    <div class="w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
-                                </div>
-                                <div class="w-16 h-8 bg-slate-100 rounded border border-slate-300"></div>
-                            </div>
+                        <div class="relative bg-slate-100 rounded-2xl mb-6 overflow-hidden h-56 flex items-center justify-center">
+                            <span class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">桌上/中型</span>
+                            <!-- Product Image Block -->
+                            <img src="hp2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0369a1/ffffff?text=Hp2+Hot+%26+Cold'" alt="Hp2 冷熱純水機" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Hp2 冷熱純水機</h3>
                         <p class="text-xs text-slate-500 mb-4">輕巧實用尺寸，滿足冷熱雙溫需求</p>
@@ -299,23 +286,13 @@
                     </button>
                 </div>
 
-                <!-- Model 3: KT660RO -->
+                <!-- Product 3: KT660RO (Updated Image kt660.jfif) -->
                 <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="counter">
                     <div>
-                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
-                            <div class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">精緻桌上型</div>
-                            <div class="w-32 h-28 bg-gradient-to-tr from-slate-100 to-slate-200 rounded-2xl border-2 border-slate-300 shadow-md p-2 flex flex-col justify-between">
-                                <div class="flex justify-between items-center px-1">
-                                    <span class="text-[9px] font-bold text-sky-700">KT660</span>
-                                    <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
-                                </div>
-                                <div class="flex justify-center space-x-1 my-1">
-                                    <div class="w-2 h-3 bg-red-400 rounded-xs"></div>
-                                    <div class="w-2 h-3 bg-sky-300 rounded-xs"></div>
-                                    <div class="w-2 h-3 bg-blue-500 rounded-xs"></div>
-                                </div>
-                                <div class="w-full bg-white h-6 rounded border border-slate-200"></div>
-                            </div>
+                        <div class="relative bg-slate-100 rounded-2xl mb-6 overflow-hidden h-56 flex items-center justify-center">
+                            <span class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">精緻桌上型</span>
+                            <!-- KT660RO Image set to kt660.jfif -->
+                            <img src="kt660.jfif" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0891b2/ffffff?text=KT660RO+Water+Dispenser'" alt="KT660RO 專用冰冷熱飲水機" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">KT660RO 專用冰冷熱飲水機</h3>
                         <p class="text-xs text-slate-500 mb-4">時尚桌上型設計，小巧兼具三溫功能</p>
@@ -341,20 +318,13 @@
                     </button>
                 </div>
 
-                <!-- Model 4: A6 廚下型 -->
+                <!-- Product 4: A6 Undersink -->
                 <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="counter">
                     <div>
-                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
-                            <div class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">廚下隱藏式</div>
-                            <div class="flex items-center space-x-3">
-                                <div class="w-20 h-28 bg-slate-300 rounded-lg border border-slate-400 p-2 flex flex-col justify-between">
-                                    <div class="text-[8px] text-slate-600">A6 廚下主機</div>
-                                    <div class="w-full h-8 bg-slate-400/30 rounded"></div>
-                                </div>
-                                <div class="w-8 h-16 border-t-2 border-r-2 border-slate-600 rounded-tr-xl flex flex-col justify-end">
-                                    <div class="text-[8px] font-bold text-sky-600">陶瓷龍頭</div>
-                                </div>
-                            </div>
+                        <div class="relative bg-slate-100 rounded-2xl mb-6 overflow-hidden h-56 flex items-center justify-center">
+                            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">廚下隱藏式</span>
+                            <!-- Product Image Block -->
+                            <img src="a6.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/4f46e5/ffffff?text=A6+Undersink+System'" alt="廚下型冷熱純水機 (A6)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">廚下型冷熱純水機 (A6)</h3>
                         <p class="text-xs text-slate-500 mb-4">隱藏式安裝不占檯面，附精密陶瓷水心龍頭</p>
@@ -380,19 +350,13 @@
                     </button>
                 </div>
 
-                <!-- Model 5: RO純水主機 -->
+                <!-- Product 5: NBL Smart RO -->
                 <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="ro">
                     <div>
-                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
-                            <div class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">智慧純水設備</div>
-                            <div class="flex items-center space-x-2">
-                                <div class="w-24 h-24 border-2 border-emerald-500 rounded-xl bg-white p-2 flex space-x-1 items-end justify-center">
-                                    <div class="w-4 h-16 bg-sky-200 rounded-t"></div>
-                                    <div class="w-4 h-16 bg-sky-200 rounded-t"></div>
-                                    <div class="w-4 h-16 bg-sky-200 rounded-t"></div>
-                                </div>
-                                <div class="w-12 h-20 bg-cyan-600 rounded-full border border-cyan-700"></div>
-                            </div>
+                        <div class="relative bg-slate-100 rounded-2xl mb-6 overflow-hidden h-56 flex items-center justify-center">
+                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">智慧純水設備</span>
+                            <!-- Product Image Block -->
+                            <img src="ro.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=NOBEL+Smart+RO+Machine'" alt="諾貝爾智慧型 RO 純水機" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">諾貝爾智慧型 RO 純水機</h3>
                         <p class="text-xs text-slate-500 mb-4">搭載微電腦水質偵測顯示器，水質好壞一目瞭然</p>
@@ -418,19 +382,13 @@
                     </button>
                 </div>
 
-                <!-- Model 6: M-201系列 -->
+                <!-- Product 6: M-201 Series -->
                 <div class="product-card group bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="ro">
                     <div>
-                        <div class="relative bg-slate-100 rounded-2xl p-6 mb-6 text-center overflow-hidden h-52 flex items-center justify-center">
-                            <div class="absolute top-3 left-3 bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded-full">專業淨水組</div>
-                            <div class="w-28 h-28 bg-white rounded-xl shadow border border-slate-300 p-2 flex flex-col justify-between items-center">
-                                <div class="text-[9px] font-mono text-slate-500">M-201(A1) ADVANCED</div>
-                                <div class="flex space-x-1">
-                                    <div class="w-3 h-12 bg-sky-100 rounded border border-sky-300"></div>
-                                    <div class="w-3 h-12 bg-sky-100 rounded border border-sky-300"></div>
-                                    <div class="w-3 h-12 bg-sky-100 rounded border border-sky-300"></div>
-                                </div>
-                            </div>
+                        <div class="relative bg-slate-100 rounded-2xl mb-6 overflow-hidden h-56 flex items-center justify-center">
+                            <span class="absolute top-3 left-3 bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">專業淨水組</span>
+                            <!-- Product Image Block -->
+                            <img src="m201.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/334155/ffffff?text=NOBEL+M-201+RO+System'" alt="NOBEL M-201 RO系統" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">NOBEL M-201 RO系統</h3>
                         <p class="text-xs text-slate-500 mb-4">自動沖洗RO膜、無水高水壓自動斷電防護</p>
@@ -460,7 +418,7 @@
         </div>
     </section>
 
-    <!-- 5-Stage Filtration Details Section -->
+    <!-- 5-Stage Filtration Section -->
     <section id="stages" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -469,7 +427,7 @@
                 <p class="text-slate-600 mt-3 text-base">層層過濾，滴滴純淨。透視極小孔徑 Reverse Osmosis 技術與優質濾心材質。</p>
             </div>
 
-            <!-- Interactive Stage Cards Grid -->
+            <!-- Stage Cards -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Stage 1 -->
@@ -511,7 +469,7 @@
                     </p>
                 </div>
 
-                <!-- Core Pump & Motor -->
+                <!-- Motor Power Unit -->
                 <div class="bg-gradient-to-br from-slate-900 to-sky-950 text-white rounded-2xl p-6 shadow-xl border border-sky-800">
                     <div class="flex items-center justify-between mb-4">
                         <div class="p-2 bg-sky-500/20 rounded-xl border border-sky-400/30">
@@ -527,7 +485,7 @@
                     </p>
                 </div>
 
-                <!-- Stage 4 -->
+                <!-- Stage 4 RO -->
                 <div class="bg-sky-50/80 rounded-2xl p-6 border border-sky-200 hover:border-sky-500 transition-all shadow-sm lg:col-span-2">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center space-x-3">
@@ -573,7 +531,7 @@
         </div>
     </section>
 
-    <!-- Advanced Energy Water System Section -->
+    <!-- Energy Water 9766 Section -->
     <section id="energy" class="py-20 bg-slate-900 text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -598,9 +556,8 @@
                     </div>
                 </div>
 
-                <!-- 5-Process Energy Pipeline Cards -->
+                <!-- 5 Steps -->
                 <div class="lg:col-span-7 space-y-3">
-                    
                     <div class="bg-slate-800/50 hover:bg-slate-800 rounded-xl p-4 border border-slate-700 transition-all flex items-start space-x-4">
                         <div class="w-8 h-8 rounded-lg bg-sky-500 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">1</div>
                         <div>
@@ -640,7 +597,6 @@
                             <p class="text-xs text-slate-300 mt-0.5">有效去除餘氯、三鹵甲烷、臭味及農藥化學物質，確保最高等級生飲水品質。</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -717,7 +673,7 @@
         </div>
     </section>
 
-    <!-- Certifications & Company Strengths -->
+    <!-- Certifications Section -->
     <section id="certs" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -727,7 +683,6 @@
             </div>
 
             <div class="grid md:grid-cols-4 gap-6 text-center">
-                
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center">
                     <div class="w-16 h-16 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
                         <i data-lucide="shield-check" class="w-8 h-8"></i>
@@ -759,12 +714,11 @@
                     <h3 class="font-bold text-slate-900 text-base mb-1">全省售後服務網</h3>
                     <p class="text-xs text-slate-500">全省 36 個經銷網、數百間加盟店專業維護</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Contact / Booking Section -->
+    <!-- Contact Form Section -->
     <section id="contact" class="py-20 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12">
@@ -808,7 +762,7 @@
                     </div>
                 </div>
 
-                <!-- Interactive Form -->
+                <!-- Form -->
                 <div class="lg:col-span-7 bg-slate-800 rounded-3xl p-6 sm:p-8 border border-slate-700">
                     <form onsubmit="handleFormSubmit(event)" class="space-y-4">
                         <div class="grid sm:grid-cols-2 gap-4">
@@ -937,7 +891,7 @@
             });
         }
 
-        // Filter Lifespan Calculator Logic
+        // Filter Lifespan Calculator
         function calculateFilters() {
             const people = parseFloat(document.getElementById('calc-people').value);
             const usage = parseFloat(document.getElementById('calc-usage').value);
@@ -954,7 +908,7 @@
             document.getElementById('res-stg5').innerText = `約 ${stg5} 個月`;
         }
 
-        // Modal Logic
+        // Modal Controls
         function openModal(productName) {
             document.getElementById('modal-title').innerText = `諮詢：${productName}`;
             document.getElementById('modal-product-input').value = productName;
